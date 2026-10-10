@@ -1,0 +1,12 @@
+@theme {
+    /* Colors */
+    --color-primary: #2a3e34;
+    --color-secondary: #466746;
+    --color-text-main: #2a3e34;
+    --color-text-muted: #595959;
+    --color-bg: #ffffff;
+
+    /* Typography */
+    --font-sans: "Cairo", sans-serif;
+    --font-ruqaa: "Aref", serif;
+}

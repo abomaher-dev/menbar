@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Cairo";
+    src: url("../assets/fonts/cairo/cairo-variable.woff2") format("woff2");
+    font-weight: 200 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aref";
+    src: url("../assets/fonts/ruqaa/aref-ruqaa-bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aref";
+    src: url("../assets/fonts/ruqaa/aref-ruqaa-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

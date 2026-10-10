@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>المكتبة | المنبر</title>
+    </head>
+    <body class="flex min-h-screen flex-col">
+        <div id="site-header"></div>
+        <main class="decorative-page flex-1">
+            <section class="relative z-10 px-4 py-10 text-center sm:px-6 sm:py-12 lg:px-12 lg:py-14">
+                <h1 class="mb-3 font-bold text-4xl text-text-main sm:text-5xl lg:text-6xl">
+                    مكتبتنا الأكاديمية
+                </h1>
+                <p class="text-lg text-text-main sm:text-xl">
+                    تصفح الكتب والمواد العلمية المتاحة في مكتبتنا الأكاديمية
+                </p>
+                <div
+                    id="book-grid"
+                    class="mx-auto mt-10 grid max-w-7xl grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4 lg:gap-4"
+                ></div>
+            </section>
+        </main>
+        <div id="site-footer"></div>
+        <script type="module" src="/src/pages/library.js"></script>
+    </body>
+</html>

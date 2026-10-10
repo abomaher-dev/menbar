@@ -1,0 +1,34 @@
+.decorative-page {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.decorative-page::before,
+.decorative-page::after {
+    position: absolute;
+    z-index: -1;
+    width: clamp(10rem, 24vw, 22rem);
+    aspect-ratio: 1;
+    background-image: url("../assets/images/pattern.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    opacity: 0.16;
+    pointer-events: none;
+}
+
+.decorative-page::before {
+    inset-block-start: 0;
+    inset-inline-start: 0;
+}
+
+.decorative-page::after {
+    inset-block-end: 0;
+    inset-inline-end: 0;
+    transform: rotate(180deg);
+}
+
+.decorative-top-only::after {
+    content: none;
+}

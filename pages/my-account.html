@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>حسابي | المنبر</title>
+    </head>
+    <body class="flex min-h-screen flex-col" data-account-page="account">
+        <div id="site-header"></div>
+        <div class="grid flex-1 grid-cols-1 md:grid-cols-[18rem_minmax(0,1fr)]">
+            <div id="account-sidebar"></div>
+            <main class="min-w-0 px-5 py-8 sm:px-8 md:px-10 lg:px-16">
+                <div class="mx-auto max-w-4xl">
+                    <div class="mb-8 border-b border-primary/40 pb-4">
+                        <h1 class="text-2xl font-bold text-text-main">بيانات الحساب</h1>
+                    </div>
+
+                    <section class="border-b border-gray-300 pb-8">
+                        <div class="flex flex-wrap items-center gap-6">
+                            <img
+                                src="/src/assets/images/profile.png"
+                                alt="الصورة الشخصية"
+                                class="size-24 rounded-full object-cover"
+                            />
+                            <div class="flex flex-col gap-3">
+                                <button type="button" class="rounded-full bg-primary px-5 py-2 font-bold text-bg">
+                                    تحميل الصورة الشخصية
+                                </button>
+                                <button type="button" class="rounded-full border border-primary px-5 py-2 font-bold text-primary">
+                                    حذف الصورة الشخصية
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="border-b border-gray-300 py-7">
+                        <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
+                            <h2 class="text-xl font-bold text-text-main">المعلومات الشخصية</h2>
+                            <a href="/pages/edit-account.html" class="text-sm text-text-muted underline">
+                                تعديل البيانات
+                            </a>
+                        </div>
+                        <dl class="grid grid-cols-1 gap-x-10 gap-y-5 sm:grid-cols-2">
+                            <div><dt class="font-bold">الاسم الأول</dt><dd class="text-text-muted">عبدالله</dd></div>
+                            <div><dt class="font-bold">الاسم الأوسط</dt><dd class="text-text-muted">إيمان</dd></div>
+                            <div><dt class="font-bold">الاسم الأخير</dt><dd class="text-text-muted">الخالد</dd></div>
+                            <div><dt class="font-bold">تاريخ الولادة</dt><dd class="text-text-muted">2002-12-3</dd></div>
+                            <div><dt class="font-bold">الجنس</dt><dd class="text-text-muted">ذكر</dd></div>
+                            <div><dt class="font-bold">الحالة الاجتماعية</dt><dd class="text-text-muted">أعزب</dd></div>
+                            <div><dt class="font-bold">الدولة</dt><dd class="text-text-muted">مصر</dd></div>
+                            <div><dt class="font-bold">الجنسية</dt><dd class="text-text-muted">مصر</dd></div>
+                            <div><dt class="font-bold">المدينة</dt><dd class="text-text-muted">الإسماعيلية</dd></div>
+                            <div><dt class="font-bold">اللغة الأم</dt><dd class="text-text-muted">العربية</dd></div>
+                        </dl>
+                    </section>
+
+                    <section class="border-b border-gray-300 py-7">
+                        <h2 class="mb-6 text-xl font-bold text-text-main">معلومات التواصل</h2>
+                        <dl class="grid grid-cols-1 gap-x-10 gap-y-5 sm:grid-cols-2">
+                            <div><dt class="font-bold">الهاتف المحمول</dt><dd class="text-text-muted">1200985094</dd></div>
+                            <div><dt class="font-bold">الرمز البديل</dt><dd class="text-text-muted">+20</dd></div>
+                            <div><dt class="font-bold">تنبيهات الرسائل النصية</dt><dd class="text-text-muted">نعم</dd></div>
+                        </dl>
+                    </section>
+
+                    <section class="py-7">
+                        <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
+                            <h2 class="text-xl font-bold text-text-main">معلومات التحصيل العلمي والعمل</h2>
+                            <a href="/pages/edit-account.html" class="text-sm text-text-muted underline">
+                                تعديل البيانات
+                            </a>
+                        </div>
+                        <dl class="grid grid-cols-1 gap-y-5">
+                            <div><dt class="font-bold">آخر شهادة علمية حصلت عليها</dt><dd class="text-text-muted">شهادة الثانوية العامة</dd></div>
+                            <div><dt class="font-bold">المستوى التعليمي</dt><dd class="text-text-muted">شهادة الثانوية العامة</dd></div>
+                            <div><dt class="font-bold">تاريخ التخرج</dt><dd class="text-text-muted">2020</dd></div>
+                            <div><dt class="font-bold">العمل الحالي</dt><dd class="text-text-muted">طالب بكلية الحاسبات والمعلومات جامعة قناة السويس</dd></div>
+                        </dl>
+                    </section>
+
+                </div>
+            </main>
+        </div>
+        <script type="module" src="/src/pages/account-layout.js"></script>
+    </body>
+</html>

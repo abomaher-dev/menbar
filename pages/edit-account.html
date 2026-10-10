@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>تعديل بيانات الحساب | المنبر</title>
+    </head>
+    <body class="flex min-h-screen flex-col" data-account-page="account">
+        <div id="site-header"></div>
+        <div class="grid flex-1 grid-cols-1 md:grid-cols-[18rem_minmax(0,1fr)]">
+            <div id="account-sidebar"></div>
+            <main class="min-w-0 px-5 py-8 sm:px-8 md:px-10 lg:px-16">
+                <div class="mx-auto max-w-4xl">
+                    <div class="mb-7 border-b border-primary/40 pb-4">
+                        <h1 class="text-2xl font-bold text-text-main">بيانات الحساب</h1>
+                    </div>
+
+                    <section class="border-b border-gray-300 pb-6">
+                        <h2 class="mb-5 text-xl font-bold text-text-main">بيانات دخول الحساب</h2>
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <div>
+                                <p class="font-bold">البريد الإلكتروني</p>
+                                <p class="text-text-muted">email@email.com</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">كلمة المرور</p>
+                                <a href="/pages/change-password.html" class="text-text-muted underline">تغيير كلمة المرور</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <form class="space-y-7">
+                        <section class="border-b border-gray-300 py-6">
+                            <h2 class="mb-5 text-xl font-bold text-text-main">المعلومات الشخصية</h2>
+                            <div class="grid gap-x-6 gap-y-4 sm:grid-cols-2">
+                                <label class="flex flex-col gap-2 font-bold">الاسم الأول
+                                    <input type="text" value="عبدالله" class="h-10 rounded-md border border-gray-400 px-3 font-normal" />
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">الاسم الأوسط
+                                    <input type="text" value="إيمان" class="h-10 rounded-md border border-gray-400 px-3 font-normal" />
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">الاسم الأخير
+                                    <input type="text" value="الخالد" class="h-10 rounded-md border border-gray-400 px-3 font-normal" />
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">تاريخ الميلاد
+                                    <input type="date" value="2002-12-03" class="h-10 rounded-md border border-gray-400 px-3 font-normal" />
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">الدولة
+                                    <select class="h-10 rounded-md border border-gray-400 px-3 font-normal"><option>مصر</option></select>
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">المدينة / البلدة
+                                    <input type="text" value="الإسماعيلية" class="h-10 rounded-md border border-gray-400 px-3 font-normal" />
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">الجنسية
+                                    <select class="h-10 rounded-md border border-gray-400 px-3 font-normal"><option>مصر</option></select>
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">اللغة الأم
+                                    <select class="h-10 rounded-md border border-gray-400 px-3 font-normal"><option>العربية</option></select>
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">الجنس
+                                    <select class="h-10 rounded-md border border-gray-400 px-3 font-normal"><option>ذكر</option><option>أنثى</option></select>
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">الحالة الاجتماعية
+                                    <select class="h-10 rounded-md border border-gray-400 px-3 font-normal"><option>أعزب</option><option>متزوج</option></select>
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="border-b border-gray-300 pb-6">
+                            <h2 class="mb-5 text-xl font-bold text-text-main">معلومات التواصل</h2>
+                            <div class="grid gap-x-6 gap-y-4 sm:grid-cols-2">
+                                <label class="flex flex-col gap-2 font-bold">رقم الهاتف
+                                    <input type="tel" value="123 456 789" class="h-10 rounded-md border border-gray-400 px-3 font-normal" />
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">رمز الدولة
+                                    <select class="h-10 rounded-md border border-gray-400 px-3 font-normal"><option>+20</option></select>
+                                </label>
+                            </div>
+                            <fieldset class="mt-5">
+                                <legend class="mb-3 font-bold">تنبيهات الرسائل النصية</legend>
+                                <label class="me-5"><input type="radio" name="sms" value="yes" checked /> نعم</label>
+                                <label><input type="radio" name="sms" value="no" /> عبر هاتف الجوال</label>
+                            </fieldset>
+                        </section>
+
+                        <section>
+                            <h2 class="mb-5 text-xl font-bold text-text-main">معلومات التحصيل العلمي والعمل</h2>
+                            <div class="grid gap-x-6 gap-y-4 sm:grid-cols-2">
+                                <label class="flex flex-col gap-2 font-bold">آخر شهادة علمية حصلت عليها
+                                    <input type="text" value="شهادة الثانوية العامة" class="h-10 rounded-md border border-gray-400 px-3 font-normal" />
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">المستوى التعليمي
+                                    <select class="h-10 rounded-md border border-gray-400 px-3 font-normal"><option>شهادة الثانوية العامة</option><option>جامعي</option></select>
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">تاريخ التخرج
+                                    <input type="number" value="2020" class="h-10 rounded-md border border-gray-400 px-3 font-normal" />
+                                </label>
+                                <label class="flex flex-col gap-2 font-bold">العمل الحالي
+                                    <input type="text" value="طالب بكلية الحاسبات والمعلومات جامعة قناة السويس" class="h-10 rounded-md border border-gray-400 px-3 font-normal" />
+                                </label>
+                            </div>
+                        </section>
+
+                        <div class="flex flex-wrap justify-center gap-3 border-t border-gray-300 pt-6">
+                            <a href="/pages/my-account.html" class="inline-flex h-11 w-40 items-center justify-center rounded-md border border-primary text-primary">
+                                إلغاء
+                            </a>
+                            <button type="button" class="h-11 w-40 rounded-md bg-primary font-bold text-bg">
+                                حفظ التغييرات
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <script type="module" src="/src/pages/account-layout.js"></script>
+    </body>
+</html>

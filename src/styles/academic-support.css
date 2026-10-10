@@ -1,0 +1,14 @@
+.academic-success-dialog {
+    width: min(44rem, calc(100% - 2rem));
+    max-height: calc(100dvh - 2rem);
+    overflow-y: auto;
+    border: 0;
+    margin: auto;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+}
+
+.academic-success-dialog::backdrop {
+    background: rgb(0 0 0 / 55%);
+}

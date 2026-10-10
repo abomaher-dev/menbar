@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>دروس المساق | المنبر</title>
+    </head>
+    <body class="flex min-h-screen flex-col">
+        <div id="site-header"></div>
+        <div class="grid flex-1 grid-cols-1 md:grid-cols-[18rem_minmax(0,1fr)]">
+            <div id="subject-sidebar"></div>
+            <main class="min-w-0 px-4 py-6 sm:px-8 md:px-10 lg:px-12">
+                <div id="lesson-content" class="mx-auto max-w-5xl"></div>
+            </main>
+        </div>
+        <script type="module" src="/src/pages/subject-learn.js"></script>
+    </body>
+</html>
